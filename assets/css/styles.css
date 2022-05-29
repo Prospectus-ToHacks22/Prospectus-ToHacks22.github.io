@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 /* Jarett Dewbury's Website CSS */
 /*------------------------------*/
 
@@ -12,6 +13,10 @@
 
 .darkpurple {
   color: #5A496B;
+}
+
+.white {
+  color: #FFF;
 }
 
 /*-----------------------------*/
@@ -29,6 +34,14 @@ html, body{
   text-align: left;
   transition: 1s;
 }
+
+  .financial-health {
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+   }
 
 .topnav {
   overflow: hidden;
@@ -58,6 +71,8 @@ html, body{
   -webkit-transition: all 2s;
   transition: all 2s;
 }
+
+
 
 /*-----------------------------*/
 
@@ -102,7 +117,52 @@ b {
   transition: 1s;
 }
 
+.next {
+  background-color: #A98FC3;
+  border-radius: 20px;
+  color: #FFF;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 700px;
+  transition: 1s;
+}
+
+.stonks {
+  background-color: #A98FC3;
+  border-radius: 20px;
+  color: #FFF;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 650px;
+  transition: 1s;
+}
+
+.stonks1 {
+  background-color: #A98FC3;
+  border-radius: 20px;
+  color: #FFF;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 630px;
+  transition: 1s;
+}
+
 .getstarted:hover {
+  color: #A98FC3;
+  background-color: #FFF;
+}
+
+.next:hover {
+  color: #A98FC3;
+  background-color: #FFF;
+}
+
+.stonks:hover {
+  color: #A98FC3;
+  background-color: #FFF;
+}
+
+.stonks1:hover {
   color: #A98FC3;
   background-color: #FFF;
 }
@@ -230,3 +290,196 @@ input:focus {
   color: #DACDE8;
 }
 /*-----------------------------*/
+
+/*-------Authenticated Section ----*/
+.mainnav {
+  overflow: hidden;
+  transition: 0.4s;
+  position: fixed;
+  width: 100%;
+  z-index:100;
+}
+
+.mainnav a {
+  display: block;
+  text-align: center;
+  padding-top: 80px;
+  padding-right: 15px;
+  text-decoration: none;
+  font-size: 20px;
+  margin-right: 15px;
+  position: relative;
+  float:left;
+  transition: 0.5s;
+  color:#A98FC3
+}
+
+.mainnav a:hover {
+  color: white;
+}
+
+/*effect-underline*/
+.mainnav a.effect-underline:after {
+	content: '';
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  height: 1em;
+  margin-left:10%;
+  width: 80%;
+  border-bottom: 3px solid #cbbeff;
+  margin-top: 10px;
+  opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale(0,1);
+	transform: scale(0,1);
+}
+
+.mainnav a.effect-underline:hover:after {
+  opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+.mainnav ol {
+  position: relative;
+  display: inline;
+  align-items: flex-end;
+}
+
+.addspace {
+  width: 470px
+}
+
+.mainnav .icon {
+  font-size: 25px;
+  margin-right: 75px;
+  margin-top: 10px;
+  display: none;
+  color: #333;
+}
+
+@media screen and (max-width: 1310px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+    transition: none;
+  }
+}
+
+@media screen and (max-width: 1310px) {
+  .topnav a {display: none;}
+}
+
+@media screen and (max-width: 1310px) {
+  .topnav.responsive {position: fixed;}
+  .topnav.responsive .icon {
+    margin-right: 85px;
+    margin-top: 25px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 25px;
+  }
+  .mainnav .logo {
+    margin-left: 8%;
+    float: none;
+    text-align: left;
+    padding-right: 10px;
+  }
+  .mainnav.responsive a {
+    float: none;
+    display: block;
+    text-align: center;
+    position: relative;
+    display: block;
+    text-decoration: none;
+    z-index:1;
+    padding-bottom: 20px;
+    font-size: 17px;
+    margin-top: -30px;
+  }
+  .mainnav a.effect-underline:after{
+    border-bottom: none;
+  }
+  
+}
+
+.logoAuth {
+  margin-left: 30px;
+  height: 100px;
+  float: left;
+  text-decoration: none;
+  text-align: center;
+  padding: 11px 10px;
+  transition: 1s;
+}
+
+.logoAuth:hover {
+  filter: brightness(500%);
+  -webkit-filter: brightness(500%);
+  -moz-filter: brightness(500%);
+  -o-filter: brightness(500%);
+  -ms-filter: brightness(500%);
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
+.contact{
+  padding-top: 170px;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+}
+
+.profile {
+  margin-top: 10px;
+  text-align: left;
+  background-color: #A98FC3;
+  width: 600px;
+  height: 35px;
+  font-size: 20px;
+  border-radius: 25px;
+  border: none;
+  text-indent: 20px;
+  color: #5A496B;
+  font-weight: bolder;
+  box-shadow: none;
+  margin-left: 500px;
+}
+
+/* remove border when active */
+profile:focus {
+	outline: none;
+}
+
+.mylogo {
+  margin-top: -75px;
+  margin-left: 30px;
+  height: 165px;
+  float: left;
+  text-decoration: none;
+  text-align: center;
+  padding: 11px 50px;
+  transition: 1s;
+}
+
+h7 {
+  margin-top: 20px;
+  font-size: 18px;
+  margin-left: 580px;
+  color: #cbbeff;
+  font-style: italic;
+}
+
+.mylogo:hover {
+  filter: brightness(500%);
+  -webkit-filter: brightness(500%);
+  -moz-filter: brightness(500%);
+  -o-filter: brightness(500%);
+  -ms-filter: brightness(500%);
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
