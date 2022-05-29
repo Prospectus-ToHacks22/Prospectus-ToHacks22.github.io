@@ -1,0 +1,232 @@
+/* Jarett Dewbury's Website CSS */
+/*------------------------------*/
+
+/* -------Colours----------*/
+
+.purple {
+  color: #A98FC3;
+}
+.lightpurple {
+  color: #DACDE8;
+}
+
+.darkpurple {
+  color: #5A496B;
+}
+
+/*-----------------------------*/
+
+/* -------Navigation Bar----------*/
+html, body{
+  font-family: Alata;
+	background-image : url('../img/background1.png');
+  background-color: #5A496B;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  color: #FFF;
+  font-size: 25px;
+  text-align: left;
+  transition: 1s;
+}
+
+.topnav {
+  overflow: hidden;
+  transition: 0.4s;
+  position: fixed;
+  width: 100%;
+  z-index:100;
+}
+
+.logo {
+  margin-top: 5px;
+  margin-left: 30px;
+  height: 165px;
+  float: left;
+  text-decoration: none;
+  text-align: center;
+  padding: 11px 50px;
+  transition: 1s;
+}
+
+.logo:hover {
+  filter: brightness(500%);
+  -webkit-filter: brightness(500%);
+  -moz-filter: brightness(500%);
+  -o-filter: brightness(500%);
+  -ms-filter: brightness(500%);
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
+/*-----------------------------*/
+
+/*-------Intro section----------*/
+
+.section1 {
+	background-image : url('../img/prospectus-cover.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+	padding-bottom: 3rem;
+  min-height: 100vh;
+  overflow-y: hidden;
+  position: relative;
+  transition: all 0.5s ease-in-out;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+h4 {
+  margin-top: 270px;
+  text-align: center;
+  font-weight: lighter;
+  font-size: 35px;
+  padding-left: 180px;
+  padding-right: 180px;
+}
+
+b {
+  background-color: #A98FC3;
+  padding-top: 0px;
+  padding-bottom: 5px;
+}
+
+.getstarted {
+  background-color: #A98FC3;
+  border-radius: 20px;
+  color: #FFF;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 650px;
+  transition: 1s;
+}
+
+.getstarted:hover {
+  color: #A98FC3;
+  background-color: #FFF;
+}
+
+h5 {
+  font-size: 18px;
+  color: #DACDE8;
+  margin-left: 470px;
+}
+
+c {
+  margin-top: 5px;
+  font-size: 20px;
+}
+
+
+/* -------Home Section----------*/
+
+.sectiontitle{
+  margin-left: 20px;
+  color: #59646d;
+  font-size: 2vw;
+}
+
+.section2 {
+	background-image : url('../img/background1.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+	padding-bottom: 3rem;
+  min-height: 100vh;
+  overflow-y: hidden;
+  position: relative;
+  transition: all 0.5s ease-in-out;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+h1 {
+  color: #FFF;
+  font-size: 80px;
+  line-height: 100%;
+  margin: 10px;
+  margin-top: 150px;
+  transition: 0.2s;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+h3 {
+  margin-top: 20px;
+  font-size: 35px;
+  margin-right: 700px;
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+::placeholder {
+  color: #DACDE8;
+  font-style: italic;
+  font-weight: lighter;
+}
+
+label {
+  margin-top: 10px;
+  text-align: left;
+  margin-left: 250px;
+  font-size: 25px;
+  box-shadow: none;
+  font-weight: none;
+  position: fixed;
+}
+
+input {
+  margin-top: 10px;
+  text-align: left;
+  background-color: #A98FC3;
+  width: 600px;
+  height: 35px;
+  font-size: 20px;
+  border-radius: 25px;
+  border: none;
+  text-indent: 20px;
+  color: #5A496B;
+  font-weight: bolder;
+  box-shadow: none;
+  margin-left: 500px;
+}
+
+/* remove border when active */
+input:focus {
+	outline: none;
+}
+
+.submit {
+  background-color: #A98FC3;
+  width: 100px;
+  height: 40px;
+  font-size: 20px;
+  border-radius: 25px;
+  color: #FFF;
+  font-weight: bolder;
+  margin-left: 675px;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-weight: lighter;
+  transition: 0.5s;
+}
+
+.submit:hover {
+  background-color: #FFF;
+  color: #A98FC3;
+}
+
+.signin {
+  font-size: 15px;
+  color: #FFF;
+  margin-left: 630px;
+}
+
+.signin:hover {
+  color: #DACDE8;
+}
+/*-----------------------------*/
