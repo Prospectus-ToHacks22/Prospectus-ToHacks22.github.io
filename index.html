@@ -5,19 +5,19 @@
 
 ::selection {
   color: #fff;
-  background: #8262FF;
+  background: #A98FC3;
 }
 </style>
 </style> 
-	<title>Jarett Dewbury - Aspiring Engineer</title>
+	<title>Prospectus - Financial Support</title>
 
 	<!-- css files -->
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=BioRhyme">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alata">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.3.1/css/bulma.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
 
-	<link rel="icon" type="image/x-icon" href="assets/img/Weblogo.png">
+	<link rel="icon" type="image/x-icon" href="assets/img/TOHacks-Logo.png">
 	<meta name="author" content="Jarett Dewbury">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta property="og:image" content="assets/img/preview.png" />
@@ -26,101 +26,28 @@
 	<body>
 
 	<div class="topnav" id="myTopnav">
-		<ol><img class="logo" draggable="false" src="assets/img/logo.png" ></ol><a class="addspace"></a>
-		<ol><a href="#home" class="effect-underline grey">&ensp;&ensp;Home</a></ol>
-		<ol><a href="#about" class="effect-underline grey">&ensp;&ensp;About</a></ol>
-		<ol><a href="#experience" class="effect-underline grey">&ensp;&ensp;Experience</a></ol>
-		<ol><a href="#projects" class="effect-underline grey">&ensp;&ensp;Projects</a></ol><b></b>
-		<!-- <ol><a href="#projects" class="effect-underline purple">&ensp;&ensp;Blog</a></ol> BLOG COMING SOON--> 
-		<ol><a href="mailto:jdewbury@uwaterloo.ca" class="effect-underline purple" >&ensp;&ensp;Contact</a></ol>
+		<a href="intro.html"><img class="logo" draggable="false"  src="assets/img/prospectus_logo.png"></a>
 		
-		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
-		<i class="fa fa-align-justify" aria-hidden="true"></i>
-		</a>
 	</div>
-
-	<!-- Side Navigation Bar -->
-	<div class="sidenav">
-		<b>
-		<a href="https://www.linkedin.com/in/jarett-dewbury/" target="_blank" class="nav-item">
-			<span class="icon">
-				<i class="fa fa-linkedin" style="font-size:24px"></i>
-			</span>
-		</a>
-		<a href="https://twitter.com/JarettDewbury" target="_blank" class="nav-item">
-			<span class="icon">
-				<i class="fa fa-twitter" style="font-size:24px"></i>
-			</span>
-		</a>
-		<a href="https://github.com/Jdewbury" target="_blank" class="nav-item">
-			<span class="icon">
-				<i class="fa fa-github" style="font-size:24px"></i>
-			</span>
-		</a>
-
-		<!--X
-			<a href="mailto:jdewbury@uwaterloo.ca" class="nav-item">
-			<span class="icon">
-				<i class="fa fa-envelope-o fa-10x"></i>
-			</span>
-		</a>
-		-->
-		<a href="https://codepen.io/jdewbury" target="_blank" class="nav-item">
-		<span class="icon">
-			<i class="fa fa-codepen" style="font-size:24px"></i>
-		</span>
-		</a>
-		<br>
-		<div class="vl"></div>
-	</div>
-
 
 	<!-- Home Section -->
-	<section class="section1" id="home">
-			<h1>Jarett Dewbury</h1>
-				<br>
-				<br>
-				<br>
-				<div class="text">
-					<c>&ensp;Aspiring </c>&nbsp;&ensp;
-					<c>
-						<span class="word darkgrey">Researcher </span>
-						<span class="word darkgrey">Engineer</span>
-						<span class="word darkgrey">Innovator</span>
-						<span class="word darkgrey">Entrepreneur</span>
-						<span class="word darkgrey">Developer</span>
-						
-					</c>
-				</div>
+	<section class="section2" id="home">
+			<h1>Welcome to Prospectus</h1>
+			<h2>Please begin by filling out the profile below</h2>
+			<h3>First, create a profile!</h3>
+
+			<label for="fullname">Name: </label>
+			<input type="text" id="fullname" name="fullname" placeholder="Full Name"><br>
+			<label for="email">Email: </label>
+			<input type="email" id="email" name="email" placeholder="Email"><br>
+			<label for="pass">Password: </label>
+			<input type="password" id="pass" name="pass" placeholder="Password"><br>
+			<label for="cpass">Confirm Password: </label>
+			<input type="password" id="cpass" name="cpass" placeholder="Confirm Password"><br><br>
+			
+			<a class="submit" href="application.html">Sign Up!</a>
+			<a class="signin" href="signin.html">Already have an account? Sign in here</a>
 	</section>	
-
-<script src="js/main.js"></script>
-<script src="js/controller.js"></script>
-
-<script>
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
-</script>
-
-<script>
-	// When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
-	window.onscroll = function() {scrollFunction()};
-	
-	function scrollFunction() {
-	  if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
-		document.getElementById("myTopnav").style.padding = "0px 10px";
-	  } else {
-		document.getElementById("myTopnav").style.padding = "15px 10px";
-	  }
-	}
-</script>
-
 
 </body>
 </html>
